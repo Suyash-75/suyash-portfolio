@@ -7,8 +7,8 @@ export async function GET() {
       success: true,
       author: "Suyash Pandey",
       data: [
-        { id: 1, title: "CiviFund Fractional Ownership", description: "Conceptual fractional ownership platform for micro-assets in India.", tech: ["Next.js", "TypeScript", "PostgreSQL"] },
-        { id: 2, title: "Student Management System", description: "Console-based application built using C++ OOP principles.", tech: ["C++", "OOP", "File Handling"] },
+        { id: 1, title: "Toxic Comment Detection System", description: "Machine learning system that identifies toxic and non-toxic comments using NLP and text feature extraction.", tech: ["Python", "Scikit-learn", "NLP", "Pandas"] },
+        { id: 2, title: "Real-Time Chat Application", description: "Instant messaging application with WebSocket communication and persistent MySQL message storage.", tech: ["Java", "WebSocket", "MySQL"] },
       ],
     });
   }
@@ -24,15 +24,15 @@ export async function GET() {
       data: [
         {
           id: 1,
-          title: "CiviFund Fractional Ownership",
-          description: "Conceptual fractional ownership platform for micro-assets in India.",
-          tech: ["Next.js", "TypeScript", "PostgreSQL"],
+          title: "Toxic Comment Detection System",
+          description: "Machine learning system that identifies toxic and non-toxic comments using NLP and text feature extraction.",
+          tech: ["Python", "Scikit-learn", "NLP", "Pandas"],
         },
         {
           id: 2,
-          title: "Student Management System",
-          description: "Console-based application built using C++ OOP principles.",
-          tech: ["C++", "OOP", "File Handling"],
+          title: "Real-Time Chat Application",
+          description: "Instant messaging application with WebSocket communication and persistent MySQL message storage.",
+          tech: ["Java", "WebSocket", "MySQL"],
         },
       ],
     });

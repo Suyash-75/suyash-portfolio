@@ -14,6 +14,7 @@ const socials = [
   { label: 'GitHub', href: 'https://github.com/Suyash-75', mark: 'GitHub' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/suyashpandey7/', mark: 'LinkedIn' },
   { label: 'Instagram', href: 'https://www.instagram.com/suyashpandey_7/', mark: 'Instagram' },
+  { label: 'LeetCode', href: 'https://leetcode.com/u/Suyash%207P/', mark: 'LeetCode' },
 ];
 
 export default function Portfolio() {
@@ -60,10 +61,9 @@ export default function Portfolio() {
         </div>
         <div className="hero-art reveal reveal-3" aria-label="Developer profile">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="profile-disc">
-            <span className="disc-top">PORTFOLIO / 2026</span>
-            <span className="initials">SP</span>
-            <span className="disc-bottom">FULL-STACK DEVELOPER</span>
+          <div className="profile-disc profile-photo">
+            <img src="/suyash gate.jpeg" alt="Suyash Pandey" />
+            <span className="photo-label">Suyash Pandey</span>
           </div>
         </div>
       </section>
@@ -117,13 +117,29 @@ export default function Portfolio() {
         </div>
         <div className="education-list">
           <article className="education-item">
-            <div className="education-year">CURRENT</div>
+            <div className="education-year">2023—2027</div>
             <div>
-              <p className="education-degree">Bachelor of Technology</p>
-              <h3>Computer Science Engineering</h3>
-              <p>Fourth-year undergraduate studies focused on software engineering, scalable systems, and modern web development.</p>
+              <p className="education-degree">B.Tech in Computer Science • 8.07 CGPA</p>
+              <h3>Gyan Ganga Institute of Technology and Sciences</h3>
+              <p>Jabalpur, Madhya Pradesh • 8.5 SGPA</p>
             </div>
             <ArrowUpRight size={24} />
+          </article>
+          <article className="education-item">
+            <div className="education-year">MAR 2023</div>
+            <div>
+              <p className="education-degree">Higher Secondary Education • 69.6%</p>
+              <h3>Christ Church Boys&apos; Senior Secondary School</h3>
+              <p>Jabalpur, Madhya Pradesh</p>
+            </div>
+          </article>
+          <article className="education-item">
+            <div className="education-year">MAR 2021</div>
+            <div>
+              <p className="education-degree">Secondary Education • 95.5%</p>
+              <h3>Christ Church Boys&apos; Senior Secondary School</h3>
+              <p>Jabalpur, Madhya Pradesh</p>
+            </div>
           </article>
         </div>
       </section>
@@ -132,19 +148,46 @@ export default function Portfolio() {
         <div className="about-label"><p className="section-number">03 / ABOUT</p></div>
         <div className="about-copy">
           <h2>Code with purpose.<br />Design with feeling.</h2>
-          <p>Fourth-year B.Tech Computer Science student focused on scalable full-stack applications, secure backend APIs, and modern interfaces. I enjoy turning complex problems into simple, reliable experiences.</p>
+          <p>Motivated third-year B.Tech Computer Science student with strong skills in C++, MySQL, and Data Structures &amp; Algorithms. Experienced in software and machine learning projects, with a solid understanding of OOPs, DBMS, Operating Systems, and Computer Networks.</p>
           <div className="skill-pills">
-            {['Next.js', 'TypeScript', 'PostgreSQL', 'React', 'C++'].map((skill) => <span key={skill}>{skill}</span>)}
+            {['C++', 'MySQL', 'DSA', 'Python', 'HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'].map((skill) => <span key={skill}>{skill}</span>)}
           </div>
+        </div>
+      </section>
+
+      <section className="credentials-section" id="credentials">
+        <div className="credentials-heading">
+          <p className="section-number">04 / HIGHLIGHTS</p>
+          <h2>Recognition &amp; credentials</h2>
+        </div>
+        <div className="credentials-grid">
+          <article>
+            <p className="credential-label">Achievements</p>
+            <ul>
+              <li>National Entrepreneurship Challenge AIR 11 at IIT Bombay, competing against 4000+ colleges.</li>
+              <li>Winner of the Power Pitch Hackathon.</li>
+              <li>Top 20 teams at Design Odyssey Hackathon, IIT Indore.</li>
+              <li>1st place in Inter-Class Group Debate and 2nd place in English &amp; Sanskrit Elocutions.</li>
+            </ul>
+          </article>
+          <article>
+            <p className="credential-label">Certificates &amp; experience</p>
+            <p>Cisco Networking Academy courses include C++ Essentials, Advanced C++, Cybersecurity, Data Analytics, Modern AI, Applied AI, OS Basics, and CCNA 1–3.</p>
+            <p>Red Hat Linux Fundamentals • Alibaba Cloud Certified Developer • E-Cell IIT Bombay National Entrepreneurship Challenge.</p>
+          </article>
         </div>
       </section>
 
       <section className="contact-section" id="contact">
         <p>HAVE A PROJECT IN MIND?</p>
-        <a href="https://www.linkedin.com/in/suyashpandey7/" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:pandeyuyash29@gmail.com">
           <span>Let&apos;s work together</span>
           <span className="contact-icon"><Mail size={28} /></span>
         </a>
+        <div className="contact-details">
+          <a href="tel:+918989100501">+91 89891 00501</a>
+          <a href="mailto:pandeyuyash29@gmail.com">pandeyuyash29@gmail.com</a>
+        </div>
       </section>
 
       <footer>
