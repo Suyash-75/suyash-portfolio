@@ -11,9 +11,9 @@ type Project = {
 };
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/Suyash-75', mark: 'GH' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/suyash-pandey/', mark: 'IN' },
-  { label: 'Instagram', href: 'https://www.instagram.com/suyashpandey/', mark: 'IG' },
+  { label: 'GitHub', href: 'https://github.com/Suyash-75', mark: 'GitHub' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/suyashpandey7/', mark: 'LinkedIn' },
+  { label: 'Instagram', href: 'https://www.instagram.com/suyashpandey_7/', mark: 'Instagram' },
 ];
 
 export default function Portfolio() {
@@ -43,8 +43,9 @@ export default function Portfolio() {
         </a>
         <div className="nav-links">
           <a href="#work">Work</a>
+          <a href="#education">Education</a>
           <a href="#about">About</a>
-          <a className="nav-contact" href="#contact">Let&apos;s talk <ArrowUpRight size={14} /></a>
+          <a className="nav-contact" href="#contact">Let&apos;s talk <ArrowUpRight size={16} /></a>
         </div>
       </nav>
 
@@ -109,8 +110,26 @@ export default function Portfolio() {
         )}
       </section>
 
+      <section className="education-section" id="education">
+        <div className="education-heading">
+          <p className="section-number">02 / EDUCATION</p>
+          <h2>My foundation</h2>
+        </div>
+        <div className="education-list">
+          <article className="education-item">
+            <div className="education-year">CURRENT</div>
+            <div>
+              <p className="education-degree">Bachelor of Technology</p>
+              <h3>Computer Science Engineering</h3>
+              <p>Fourth-year undergraduate studies focused on software engineering, scalable systems, and modern web development.</p>
+            </div>
+            <ArrowUpRight size={24} />
+          </article>
+        </div>
+      </section>
+
       <section className="about-section" id="about">
-        <div className="about-label"><p className="section-number">02 / ABOUT</p></div>
+        <div className="about-label"><p className="section-number">03 / ABOUT</p></div>
         <div className="about-copy">
           <h2>Code with purpose.<br />Design with feeling.</h2>
           <p>Fourth-year B.Tech Computer Science student focused on scalable full-stack applications, secure backend APIs, and modern interfaces. I enjoy turning complex problems into simple, reliable experiences.</p>
@@ -122,7 +141,7 @@ export default function Portfolio() {
 
       <section className="contact-section" id="contact">
         <p>HAVE A PROJECT IN MIND?</p>
-        <a href="https://www.linkedin.com/in/suyash-pandey/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/suyashpandey7/" target="_blank" rel="noopener noreferrer">
           <span>Let&apos;s work together</span>
           <span className="contact-icon"><Mail size={28} /></span>
         </a>
