@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowDownRight, ArrowUpRight, Mail } from 'lucide-react';
 
 type Project = {
@@ -43,11 +45,12 @@ export default function Portfolio() {
           <span>Suyash Pandey</span>
         </a>
         <div className="nav-links">
-          <a href="#work">Work</a>
-          <a href="#education">Education</a>
-          <a href="#about">About</a>
+          <Link href="/work">Work</Link>
+          <Link href="/education">Education</Link>
+          <Link href="/about">About</Link>
+          <Link href="/achievements">Highlights</Link>
           <a className="nav-resume" href="/SUYASH%20RESUME%20LR.pdf" target="_blank" rel="noopener noreferrer">Resume <ArrowUpRight size={16} /></a>
-          <a className="nav-contact" href="#contact">Let&apos;s talk <ArrowUpRight size={16} /></a>
+          <a className="nav-contact" href="/contact">Let&apos;s talk <ArrowUpRight size={16} /></a>
         </div>
       </nav>
 
@@ -67,7 +70,7 @@ export default function Portfolio() {
         <div className="hero-art reveal reveal-3" aria-label="Developer profile">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" />
           <div className="profile-disc profile-photo">
-            <img src="/suyash gate.jpeg" alt="Suyash Pandey" />
+            <Image src="/Suyash Smart.jpeg" alt="Suyash Pandey in smart-casual attire" fill priority sizes="330px" />
             <span className="photo-label">Suyash Pandey</span>
           </div>
         </div>
@@ -185,13 +188,13 @@ export default function Portfolio() {
 
       <section className="contact-section" id="contact">
         <p>HAVE A PROJECT IN MIND?</p>
-        <a href="mailto:pandeyuyash29@gmail.com">
+        <a href="mailto:pandeysuyash29@gmail.com">
           <span>Let&apos;s work together</span>
           <span className="contact-icon"><Mail size={28} /></span>
         </a>
         <div className="contact-details">
           <a href="tel:+918989100501">+91 89891 00501</a>
-          <a href="mailto:pandeyuyash29@gmail.com">pandeyuyash29@gmail.com</a>
+          <a href="mailto:pandeysuyash29@gmail.com">pandeysuyash29@gmail.com</a>
         </div>
       </section>
 
