@@ -10,6 +10,7 @@ type Project = {
   title: string;
   description: string;
   tech: string[];
+  href?: string;
 };
 
 const socials = [
@@ -107,7 +108,11 @@ export default function Portfolio() {
                 </div>
                 <div className="project-info">
                   <div><h3>{project.title}</h3><p>{project.description}</p></div>
-                  <ArrowUpRight className="project-arrow" size={22} />
+                  {project.href ? (
+                    <a href={project.href} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title}`}><ArrowUpRight className="project-arrow" size={22} /></a>
+                  ) : (
+                    <ArrowUpRight className="project-arrow" size={22} />
+                  )}
                 </div>
                 <div className="tech-list">
                   {project.tech.map((technology) => <span key={technology}>{technology}</span>)}
