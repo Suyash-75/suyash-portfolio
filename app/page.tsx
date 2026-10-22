@@ -46,6 +46,7 @@ export default function Portfolio() {
           <a href="#work">Work</a>
           <a href="#education">Education</a>
           <a href="#about">About</a>
+          <a className="nav-resume" href="/SUYASH%20RESUME%20LR.pdf" target="_blank" rel="noopener noreferrer">Resume <ArrowUpRight size={16} /></a>
           <a className="nav-contact" href="#contact">Let&apos;s talk <ArrowUpRight size={16} /></a>
         </div>
       </nav>
@@ -55,7 +56,11 @@ export default function Portfolio() {
           <p className="eyebrow reveal reveal-2"><span /> Available for opportunities</p>
           <h1 className="reveal reveal-3">Building digital<span>experiences.</span></h1>
           <div className="hero-bottom reveal reveal-4">
-            <p>I&apos;m Suyash, a Full-Stack Developer crafting thoughtful products with clean code, robust systems, and interfaces that feel effortless.</p>
+            <p>I&apos;m Suyash, a Full-Stack Developer and Computer Science student crafting thoughtful products with clean code, robust systems, and interfaces that feel effortless.</p>
+            <a className="hero-resume" href="/SUYASH%20RESUME%20LR.pdf" target="_blank" rel="noopener noreferrer">
+              <span>View resume</span>
+              <ArrowUpRight size={18} />
+            </a>
             <a className="circle-link" href="#work" aria-label="Explore selected work"><ArrowDownRight size={24} /></a>
           </div>
         </div>
